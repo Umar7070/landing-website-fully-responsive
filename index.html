@@ -57,13 +57,15 @@
         </nav>
         <!-- slider -->
     </header>
-    <!-- header section //////////////////////// -->
+    <!-- header section  slide images //////////////////////// -->
     <div class="slider">
         <div class="slides">
             <div class="slide" style="background-image: url('/img/slide1.jpeg');"></div>
             <div class="slide" style="background-image: url('/img/slide2.jpeg');"></div>
             <div class="slide" style="background-image: url('/img/user1.webp');"></div>
         </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
     <!-- about sec?????????????????????? -->
     <div class="about_sec">
@@ -85,14 +87,8 @@
             <div class="card_content">
                 <h2 class="card_title">Wulan Jamila</h2>
                 <p class="card_subtitle">Web Developer</p>
-                <p class="card_text">
-                    A computer hacker whose goal is to discover the reason for human existence continually finds his
-                    work.
-                </p>
-                <p class="card_text">
-                    Get ready for a jungle jamboree! The jungle is roaring with excitement when Mowgli, Baloo, and all
-                    their animal friends stir up fun and pandemonium in this party-packed adventure.
-                </p>
+                <p class="card_text">A computer hacker whose goal is to discover the reason for human existence continually finds his work.</p>
+                <p class="card_text">Get ready for a jungle jamboree! The jungle is roaring with excitement when Mowgli, Baloo, and all their animal friends stir up fun and pandemonium in this party-packed adventure.</p>
                 <div class="social_icons">
                     <i class="fa-brands fa-twitter social"></i>
                     <i class="fa-brands fa-facebook-f social"></i>
@@ -105,8 +101,8 @@
             </div>
         </div>
         <div class="carousel_nav">
-            <span class="dot active"></span>
-            <span class="dot"></span>
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
         </div>
     </div>
     <!-- lorem images ?????????????????????????? -->
@@ -131,7 +127,7 @@
     </div>
 
     <!-- CULTER SECTION??????????????? -->
-    <div class="culter_sec">
+    <!-- <div class="culter_sec">
         <div class="back_img">
             <div class="culter_title">
                 <h5>our culter</h5>
@@ -149,8 +145,32 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 
+
+    <div class="hold-bgimgforclture">
+        <div class="culture-parent-div">
+            <div class="culture-chil-div">
+                <h1 class="culture-title-heading">
+                    OUR CULTURE
+
+                </h1>
+                <p class="culture-title-para">
+
+                    HAPPINESS IS WHEN WHAT YOU THINK, WHAT YOU SAY, AND WHAT YOU DO ARE IN HARMONY.
+                </p>
+                <div class="culture-vertical-line"></div>
+
+                <p class="culture-title-paragraph">
+                    ♡
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
     <!-- our portfolio?????????????? -->
 
     <div class="portfolio">
@@ -229,7 +249,13 @@
                     <h2>Ultra Edition</h2>
                 </div>
             </div>
-            <div class="itemBox" data-item="Photoshop"><img src="img/six.jpg" alt="">
+            <!-- <div class="itemBox" data-item="Photoshop"><img src="img/copy.jpg" alt="">
+                <div class="itemBox_content">
+                    <p>Deluxe</p>
+                    <h2>Ultra Edition</h2>
+                </div>
+            </div> -->
+            <div class="itemBox" data-item="Photoshop"><img src="img/thirt.jpg" alt="">
                 <div class="itemBox_content">
                     <p>Deluxe</p>
                     <h2>Ultra Edition</h2>
@@ -238,15 +264,17 @@
 
 
 
+
+
         </div>
     </section>
 
     <!-- chinta laura  -->
 
-    <div class="chinta_sec">
+    <!-- <div class="chinta_sec">
         <div class="chinta_backimg">
             <div class="chinta_title">
-                <h5>our culter</h5>
+                <h5>chinta laura</h5>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     atque unde, porro blanditiis a qui sequi beatae corrupti?</p>
 
@@ -261,9 +289,213 @@
             </div>
 
         </div>
+    </div> -->
+
+    <div class="hold-bgimgforclture">
+        <div class="culture-parent-div">
+            <div class="culture-chil-div">
+                <h1 class="culture-title-heading">
+                    Mang Udin
+
+                </h1>
+                <p class="culture-title-para">
+
+                    HAPPINESS IS WHEN WHAT YOU THINK, WHAT YOU SAY, AND WHAT YOU DO ARE IN HARMONY.
+                </p>
+                <div class="culture-vertical-line"></div>
+
+                <p class="culture-title-paragraph">
+                    ♡
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- servicess?????????????????????????????? -->
+
+    <div class="serveces_sec">
+        <div class="services_content">
+            <h2>the offer </h2>
+            <h6>services</h6>
+            <div class="length">
+
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem in labore nam illo alias, laudantium
+                laboriosam. Architecto possimus ipsum repellat pariatur odit est nisi dolor ipsam, hic facere beatae
+                blanditiis.</p>
+        </div>
+
     </div>
 
-    
+    <!-- services grid ??? -->
+
+    <section class="features">
+        <div class="feature">
+            <i class="head-icon fa fa-paw"></i>
+
+            <h3>Brand Identity</h3>
+            <p>A female alien comes to Scotland to replace a deceased alien. She drives a van through the roads and
+                streets seducing lonely men.</p>
+        </div>
+        <div class="feature">
+            <i class="head-icon fa fa-support">⚽</i>
+            <h3>Great Support</h3>
+            <p>A female alien comes to Scotland to replace a deceased alien. She drives a van through the roads and
+                streets seducing lonely men.</p>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-paper-plane"></i>
+            <h3>Web Development</h3>
+            <p>A female alien comes to Scotland to replace a deceased alien. She drives a van through the roads and
+                streets seducing lonely men.</p>
+        </div>
+        <div class="feature">
+            <i class="head-icon fa fa-tree"></i>
+            <h3>Web Design</h3>
+            <p>A female alien comes to Scotland to replace a deceased alien. She drives a van through the roads and
+                streets seducing lonely men.</p>
+        </div>
+        <div class="feature">
+            <i class="head-icon fa fa-language"></i>
+            <h3>Translatable</h3>
+            <p>A female alien comes to Scotland to replace a deceased alien. She drives a van through the roads and
+                streets seducing lonely men.</p>
+        </div>
+        <div class="feature">
+            <i class="head-icon fa fa-child"></i>
+            <h3>Happy Customer</h3>
+            <p>A female alien comes to Scotland to replace a deceased alien. She drives a van through the roads and
+                streets seducing lonely men.</p>
+        </div>
+    </section>
+
+    <!-- table>>>>>>>>>>>>>>>>>>>>>>>>>>. -->
+
+    <section class="pricing-section">
+        <h2 class="title">PRICING TABLE</h2>
+        <p class="subtitle">
+            Choose the best plan that suits your needs and enjoy exclusive benefits. Choose the best plan that suits
+            your needs.
+        </p>
+
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3 class="package-title">Cool Package</h3>
+                <p class="price">$25/MONTH</p>
+                <div class="icon"><i class="fa-solid fa-umbrella"></i></div>
+                <ul class="features">
+                    <li>24/7 Support</li>
+                    <li>Unlimited Access</li>
+                    <li>Exclusive Content</li>
+                    <li>Fast Service</li>
+                </ul>
+                <button class="order-btn">ORDER NOW</button>
+            </div>
+
+            <div class="pricing-card popular">
+                <h3 class="package-title">Cab Package</h3>
+                <p class="price">$30/MONTH</p>
+                <div class="icon"><i class="fa-solid fa-taxi"></i></div>
+                <ul class="features">
+                    <li>Priority Support</li>
+                    <li>Unlimited Rides</li>
+                    <li>Exclusive Discounts</li>
+                    <li>Fast Service</li>
+                </ul>
+                <button class="order-btn">ORDER NOW</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3 class="package-title">Cube Package</h3>
+                <p class="price">$40/MONTH</p>
+                <div class="icon"><i class="fa-solid fa-cube"></i></div>
+                <ul class="features">
+                    <li>VIP Access</li>
+                    <li>Unlimited Customization</li>
+                    <li>Exclusive Tools</li>
+                    <li>Premium Support</li>
+                </ul>
+                <button class="order-btn">ORDER NOW</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- contact ?????????????????? -->
+    <div class="contact_sec">
+        <div class="contact_content">
+            <h2>the contact </h2>
+            <h6>let's talk</h6>
+            <div class="length">
+
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem in labore nam illo alias, laudantium
+                laboriosam. Architecto possimus ipsum repellat pariatur odit est nisi dolor ipsam, hic facere beatae
+                blanditiis.</p>
+        </div>
+
+    </div>
+    <!-- contact form?????????????????? -->
+
+    <div class="container">
+        <div class="form-inner">
+            <form action="/" class="form-decor">
+
+
+
+
+
+                <input type="text" placeholder="Name">
+                <input type="tel" placeholder="Phone" maxlength="10" pattern="\d{10}"
+                    title="Please enter exactly 10 digits" />
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message" rows="4"></textarea>
+                <button type="submit" href="/">SEND MESSAGE</button>
+            </form>
+        </div>
+
+
+    </div>
+
+    <!-- google map -->
+    <div class="map-holding-div">
+
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224357.50212480756!2d77.23666891435418!3d28.522101933735332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742461411651!5m2!1sen!2sin"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <!-- footer//// -->
+    <footer>
+        <div class="footer_social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-vk"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-xing"></i>
+            <i class="fa-brands fa-dribbble"></i>
+        </div>
+        <div class="footer_content">
+            <p>Made with in Bandung West Java ©2014</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
 
 
 
